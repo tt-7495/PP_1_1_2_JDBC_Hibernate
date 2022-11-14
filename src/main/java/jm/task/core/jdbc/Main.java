@@ -29,7 +29,7 @@ public class Main {
         for (User allUser : user.getAllUsers()) {
             System.out.println(allUser);
         }
-        //user.cleanUsersTable();
-        //user.dropUsersTable();
+        user.cleanUsersTable();
+        user.dropUsersTable();
     }
 }
