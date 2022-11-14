@@ -21,7 +21,7 @@ public class UserDaoHibernateImpl implements UserDao {
         try (Session session = Util.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
             String query = "create table if not exists users\n" +
-                    "(\n" + "    id       INT auto_increment not null,\n" +
+                    "(   id       INT auto_increment not null,\n" +
                     "    name     TEXT not null,\n" +
                     "    lastName TEXT not null,\n" +
                     "    age      INT  null,\n" +

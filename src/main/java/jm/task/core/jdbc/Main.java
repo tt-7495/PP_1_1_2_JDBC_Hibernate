@@ -25,11 +25,11 @@ public class Main {
         user.saveUser("Александр", "Русских", (byte) 41);
         user.saveUser("Игорь", "Рыжаков", (byte) 31);
         user.saveUser("Сергей", "Роготин", (byte) 45);
-        user.removeUserById(4);
+        //user.removeUserById(4);
         for (User allUser : user.getAllUsers()) {
             System.out.println(allUser);
         }
-        user.cleanUsersTable();
-        user.dropUsersTable();
+        //user.cleanUsersTable();
+        //user.dropUsersTable();
     }
 }
